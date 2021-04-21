@@ -57,7 +57,7 @@ export default {
             ctx.closePath();
         },
         drawScore(score, pos) {
-            const digitZoom = 30;
+            const digitZoom = canvas.width / 45 | 0;
             const drawDigit = (x, y, digit) => {
                 digits[digit].split("").forEach((state, idx) => {
                     if (state === "1") {
